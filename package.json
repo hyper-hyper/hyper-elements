@@ -1,14 +1,20 @@
 {
-  "name": "template",
-  "version": "0.0.0",
-  "author": "",
+  "name": "@hyper-hyper/hyper-elements",
+  "version": "0.0.1",
+  "author": {
+    "name": "Mikita Stankiewicz",
+    "email": "itsmikita@gmail.com"
+  },
   "private": "true",
+  "main": "index.js",
   "scripts": {
-    "dev": "bun run ./server.ts --hot",
+    "dev": "hyper-server --hot --hostname localhost --port 8080 --root ./src",
     "build": "bun build ./server.ts --outdir ./dist"
   },
   "dependencies": {
-    "bun": "^1.0.22",
-    "bun-types": "^1.0.22"
+    "@hyper-hyper/hyper-server": "github:hyper-hyper/hyper-server",
+    "bun": "^1.0.26",
+    "bun-types": "^1.0.26",
+    "typescript": "^5.3.3"
   }
 }

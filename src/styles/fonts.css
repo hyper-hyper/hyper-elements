@@ -1,0 +1,20 @@
+/* Fonts */
+
+@import url("https://rsms.me/inter/inter.css");
+
+:root {
+  --sans: Inter, sans-serif;
+  --mono: monospace;
+  --serif: serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+     --sans: InterVariable, sans-serif;
+  }
+}
+body {
+  font-family: var(--sans);
+  font-feature-settings: "kern" 0, "liga" 1, 
+    "calt" 0, "zero" 1, "cv02" 1, "cv03" 1, 
+    "cv04" 1, "cv08" 1, "cv09";
+}

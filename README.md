@@ -1,3 +1,3 @@
-# Opinionated repository template
+# The `@hyper-hyper/hyper-elements` repository
 
-Could be standalone or used within monorepo template.
+A collection of self-contained/non-dependent Web Components/HTML Custom Elements to be used standalone or not.
